@@ -1373,7 +1373,7 @@ namespace System.Windows.Forms
         }
 
         #region cr
-        private string cr => "Professional Ribbon\n\n2009 Jos?Manuel Menéndez Poo\nwww.menendezpoo.com";
+        private string cr => "Professional Ribbon\n\n2009 Jos?Manuel Men?dez Poo\nwww.menendezpoo.com";
 
         #endregion
 

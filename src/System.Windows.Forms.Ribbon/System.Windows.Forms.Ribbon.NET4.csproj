@@ -86,6 +86,8 @@
     <Compile Include="Classes\Renderers\Color Tables\RibbonProfesionalRendererColorTableHalloween.cs" />
     <Compile Include="Classes\Renderers\Color Tables\RibbonProfesionalRendererColorTableJellyBelly.cs" />
     <Compile Include="Classes\Renderers\Color Tables\RibbonProfesionalRendererColorTablePurple.cs" />
+    <Compile Include="Classes\Renderers\Color Tables\RibbonProfesionalRendererColorTableVSDark.cs" />
+    <Compile Include="Classes\Renderers\Color Tables\RibbonProfesionalRendererColorTableVSLight.cs" />
     <Compile Include="Classes\RibbonOrbMenuItemCollectionEditor.cs" />
     <Compile Include="Classes\RibbonOrbOptionButtonCollectionEditor.cs" />
     <Compile Include="Classes\RibbonOrbRecentItemCollectionEditor.cs" />
@@ -249,6 +251,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="WinFormsRibbon.snk" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="RibbonForm.resx">
+      <DependentUpon>RibbonForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

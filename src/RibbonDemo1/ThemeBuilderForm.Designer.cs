@@ -120,6 +120,8 @@ namespace RibbonDemo
             this.ribbonSeparator1 = new System.Windows.Forms.RibbonSeparator();
             this.ribbonButtonList1 = new System.Windows.Forms.RibbonButtonList();
             this.ribbonButton4 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton38 = new System.Windows.Forms.RibbonButton();
+            this.ribbonButton39 = new System.Windows.Forms.RibbonButton();
             this.ribbonPanel3 = new System.Windows.Forms.RibbonPanel();
             this.ribbonHost1 = new System.Windows.Forms.RibbonHost();
             this.ribbonTab2 = new System.Windows.Forms.RibbonTab();
@@ -150,7 +152,6 @@ namespace RibbonDemo
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
-//            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();       // 17/08/19: tajbender: Comment out cause this will crash
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -162,9 +163,9 @@ namespace RibbonDemo
             this.flowLayoutPanel1.AutoScroll = true;
             this.flowLayoutPanel1.Controls.Add(this.tableLayoutPanel1);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 202);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 187);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(658, 278);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(796, 256);
             this.flowLayoutPanel1.TabIndex = 3;
             // 
             // tableLayoutPanel1
@@ -189,7 +190,7 @@ namespace RibbonDemo
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 33);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(425, 31);
             this.tableLayoutPanel1.TabIndex = 11;
             // 
             // c1
@@ -198,8 +199,8 @@ namespace RibbonDemo
             this.c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1.Location = new System.Drawing.Point(3, 0);
             this.c1.Name = "c1";
-            this.c1.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.c1.Size = new System.Drawing.Size(84, 33);
+            this.c1.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
+            this.c1.Size = new System.Drawing.Size(84, 31);
             this.c1.TabIndex = 4;
             this.c1.Text = "RibbonColorPart";
             // 
@@ -209,8 +210,8 @@ namespace RibbonDemo
             this.c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c2.Location = new System.Drawing.Point(171, 0);
             this.c2.Name = "c2";
-            this.c2.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.c2.Size = new System.Drawing.Size(31, 33);
+            this.c2.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
+            this.c2.Size = new System.Drawing.Size(31, 31);
             this.c2.TabIndex = 5;
             this.c2.Text = "Color";
             // 
@@ -220,8 +221,8 @@ namespace RibbonDemo
             this.c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c3.Location = new System.Drawing.Point(208, 0);
             this.c3.Name = "c3";
-            this.c3.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.c3.Size = new System.Drawing.Size(77, 33);
+            this.c3.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
+            this.c3.Size = new System.Drawing.Size(77, 31);
             this.c3.TabIndex = 6;
             this.c3.Text = "HexColorString";
             // 
@@ -231,8 +232,8 @@ namespace RibbonDemo
             this.c4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c4.Location = new System.Drawing.Point(291, 0);
             this.c4.Name = "c4";
-            this.c4.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.c4.Size = new System.Drawing.Size(64, 33);
+            this.c4.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
+            this.c4.Size = new System.Drawing.Size(64, 31);
             this.c4.TabIndex = 7;
             this.c4.Text = "Select Color";
             // 
@@ -242,8 +243,8 @@ namespace RibbonDemo
             this.c5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c5.Location = new System.Drawing.Point(361, 0);
             this.c5.Name = "c5";
-            this.c5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.c5.Size = new System.Drawing.Size(61, 33);
+            this.c5.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
+            this.c5.Size = new System.Drawing.Size(61, 31);
             this.c5.TabIndex = 8;
             this.c5.Text = "Invert Color";
             // 
@@ -253,8 +254,8 @@ namespace RibbonDemo
             this.c6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c6.Location = new System.Drawing.Point(93, 0);
             this.c6.Name = "c6";
-            this.c6.Padding = new System.Windows.Forms.Padding(0, 10, 0, 10);
-            this.c6.Size = new System.Drawing.Size(72, 33);
+            this.c6.Padding = new System.Windows.Forms.Padding(0, 9, 0, 9);
+            this.c6.Size = new System.Drawing.Size(72, 31);
             this.c6.TabIndex = 9;
             this.c6.Text = "Transparency";
             // 
@@ -268,14 +269,14 @@ namespace RibbonDemo
             this.panel1.Controls.Add(this.btGenerateThemeClass);
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(649, 193);
+            this.panel1.Size = new System.Drawing.Size(757, 178);
             this.panel1.TabIndex = 3;
             // 
             // txtThemeFile
             // 
-            this.txtThemeFile.Location = new System.Drawing.Point(253, 34);
+            this.txtThemeFile.Location = new System.Drawing.Point(295, 31);
             this.txtThemeFile.Name = "txtThemeFile";
-            this.txtThemeFile.Size = new System.Drawing.Size(393, 20);
+            this.txtThemeFile.Size = new System.Drawing.Size(458, 21);
             this.txtThemeFile.TabIndex = 13;
             // 
             // groupBox1
@@ -296,9 +297,9 @@ namespace RibbonDemo
             this.groupBox1.Controls.Add(this.txtThemeName);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Location = new System.Drawing.Point(3, 63);
+            this.groupBox1.Location = new System.Drawing.Point(3, 58);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(643, 127);
+            this.groupBox1.Size = new System.Drawing.Size(750, 117);
             this.groupBox1.TabIndex = 11;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Theme File";
@@ -306,9 +307,9 @@ namespace RibbonDemo
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(536, 40);
+            this.label5.Location = new System.Drawing.Point(625, 37);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(72, 13);
+            this.label5.Size = new System.Drawing.Size(83, 12);
             this.label5.TabIndex = 16;
             this.label5.Text = "Select a Style";
             // 
@@ -320,18 +321,18 @@ namespace RibbonDemo
             "Office 2007",
             "Office 2010",
             "Office 2013"});
-            this.cboOfficeStyle.Location = new System.Drawing.Point(539, 56);
+            this.cboOfficeStyle.Location = new System.Drawing.Point(629, 52);
             this.cboOfficeStyle.Name = "cboOfficeStyle";
-            this.cboOfficeStyle.Size = new System.Drawing.Size(98, 21);
+            this.cboOfficeStyle.Size = new System.Drawing.Size(114, 20);
             this.cboOfficeStyle.TabIndex = 15;
             this.cboOfficeStyle.SelectedIndexChanged += new System.EventHandler(this.cboOfficeStyle_SelectedIndexChanged);
             // 
             // lblLoadTheme
             // 
             this.lblLoadTheme.AutoSize = true;
-            this.lblLoadTheme.Location = new System.Drawing.Point(536, 80);
+            this.lblLoadTheme.Location = new System.Drawing.Point(625, 74);
             this.lblLoadTheme.Name = "lblLoadTheme";
-            this.lblLoadTheme.Size = new System.Drawing.Size(82, 13);
+            this.lblLoadTheme.Size = new System.Drawing.Size(95, 12);
             this.lblLoadTheme.TabIndex = 14;
             this.lblLoadTheme.Text = "Select a Theme";
             // 
@@ -347,18 +348,18 @@ namespace RibbonDemo
             "Purple",
             "JellyBelly",
             "Halloween"});
-            this.cboChooseTheme.Location = new System.Drawing.Point(539, 96);
+            this.cboChooseTheme.Location = new System.Drawing.Point(629, 89);
             this.cboChooseTheme.Name = "cboChooseTheme";
-            this.cboChooseTheme.Size = new System.Drawing.Size(98, 21);
+            this.cboChooseTheme.Size = new System.Drawing.Size(114, 20);
             this.cboChooseTheme.TabIndex = 13;
             this.cboChooseTheme.Text = "Normal";
             this.cboChooseTheme.SelectedIndexChanged += new System.EventHandler(this.cboChooseTheme_SelectedIndexChanged);
             // 
             // btThemeSaveXML
             // 
-            this.btThemeSaveXML.Location = new System.Drawing.Point(265, 96);
+            this.btThemeSaveXML.Location = new System.Drawing.Point(309, 89);
             this.btThemeSaveXML.Name = "btThemeSaveXML";
-            this.btThemeSaveXML.Size = new System.Drawing.Size(244, 23);
+            this.btThemeSaveXML.Size = new System.Drawing.Size(285, 21);
             this.btThemeSaveXML.TabIndex = 12;
             this.btThemeSaveXML.Text = "Save Theme as XML File";
             this.btThemeSaveXML.UseVisualStyleBackColor = true;
@@ -366,9 +367,9 @@ namespace RibbonDemo
             // 
             // btThemeSaveIni
             // 
-            this.btThemeSaveIni.Location = new System.Drawing.Point(15, 96);
+            this.btThemeSaveIni.Location = new System.Drawing.Point(17, 89);
             this.btThemeSaveIni.Name = "btThemeSaveIni";
-            this.btThemeSaveIni.Size = new System.Drawing.Size(244, 23);
+            this.btThemeSaveIni.Size = new System.Drawing.Size(285, 21);
             this.btThemeSaveIni.TabIndex = 11;
             this.btThemeSaveIni.Text = "Save Theme as INI File";
             this.btThemeSaveIni.UseVisualStyleBackColor = true;
@@ -377,88 +378,88 @@ namespace RibbonDemo
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(284, 47);
+            this.label10.Location = new System.Drawing.Point(331, 43);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(73, 13);
+            this.label10.Size = new System.Drawing.Size(82, 12);
             this.label10.TabIndex = 10;
             this.label10.Text = "Date Created:";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(284, 21);
+            this.label9.Location = new System.Drawing.Point(331, 19);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 13);
+            this.label9.Size = new System.Drawing.Size(89, 12);
             this.label9.TabIndex = 9;
             this.label9.Text = "Author Website";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 73);
+            this.label4.Location = new System.Drawing.Point(14, 67);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 13);
+            this.label4.Size = new System.Drawing.Size(81, 12);
             this.label4.TabIndex = 8;
             this.label4.Text = "Author Email:";
             // 
             // txtDateCreated
             // 
-            this.txtDateCreated.Location = new System.Drawing.Point(376, 44);
+            this.txtDateCreated.Location = new System.Drawing.Point(439, 41);
             this.txtDateCreated.Name = "txtDateCreated";
-            this.txtDateCreated.Size = new System.Drawing.Size(150, 20);
+            this.txtDateCreated.Size = new System.Drawing.Size(174, 21);
             this.txtDateCreated.TabIndex = 6;
             // 
             // txtAuthorWebsite
             // 
-            this.txtAuthorWebsite.Location = new System.Drawing.Point(376, 18);
+            this.txtAuthorWebsite.Location = new System.Drawing.Point(439, 17);
             this.txtAuthorWebsite.Name = "txtAuthorWebsite";
-            this.txtAuthorWebsite.Size = new System.Drawing.Size(150, 20);
+            this.txtAuthorWebsite.Size = new System.Drawing.Size(174, 21);
             this.txtAuthorWebsite.TabIndex = 5;
             // 
             // txtAuthorEmail
             // 
-            this.txtAuthorEmail.Location = new System.Drawing.Point(92, 70);
+            this.txtAuthorEmail.Location = new System.Drawing.Point(107, 65);
             this.txtAuthorEmail.Name = "txtAuthorEmail";
-            this.txtAuthorEmail.Size = new System.Drawing.Size(150, 20);
+            this.txtAuthorEmail.Size = new System.Drawing.Size(174, 21);
             this.txtAuthorEmail.TabIndex = 4;
             // 
             // txtAuthor
             // 
-            this.txtAuthor.Location = new System.Drawing.Point(92, 44);
+            this.txtAuthor.Location = new System.Drawing.Point(107, 41);
             this.txtAuthor.Name = "txtAuthor";
-            this.txtAuthor.Size = new System.Drawing.Size(150, 20);
+            this.txtAuthor.Size = new System.Drawing.Size(174, 21);
             this.txtAuthor.TabIndex = 3;
             // 
             // txtThemeName
             // 
-            this.txtThemeName.Location = new System.Drawing.Point(92, 18);
+            this.txtThemeName.Location = new System.Drawing.Point(107, 17);
             this.txtThemeName.Name = "txtThemeName";
-            this.txtThemeName.Size = new System.Drawing.Size(150, 20);
+            this.txtThemeName.Size = new System.Drawing.Size(174, 21);
             this.txtThemeName.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 47);
+            this.label3.Location = new System.Drawing.Point(14, 43);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(45, 12);
             this.label3.TabIndex = 1;
             this.label3.Text = "Author:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(12, 21);
+            this.label2.Location = new System.Drawing.Point(14, 19);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(74, 13);
+            this.label2.Size = new System.Drawing.Size(87, 12);
             this.label2.TabIndex = 0;
             this.label2.Text = "Theme Name:";
             // 
             // btLoadFile
             // 
-            this.btLoadFile.Location = new System.Drawing.Point(3, 32);
+            this.btLoadFile.Location = new System.Drawing.Point(3, 30);
             this.btLoadFile.Name = "btLoadFile";
-            this.btLoadFile.Size = new System.Drawing.Size(244, 23);
+            this.btLoadFile.Size = new System.Drawing.Size(285, 21);
             this.btLoadFile.TabIndex = 12;
             this.btLoadFile.Text = "Load Theme File";
             this.btLoadFile.UseVisualStyleBackColor = true;
@@ -466,18 +467,18 @@ namespace RibbonDemo
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(244, 5);
+            this.textBox1.Location = new System.Drawing.Point(285, 5);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(137, 20);
+            this.textBox1.Size = new System.Drawing.Size(159, 21);
             this.textBox1.TabIndex = 10;
             this.textBox1.DoubleClick += new System.EventHandler(this.textBox1_DoubleClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(175, 8);
+            this.label1.Location = new System.Drawing.Point(204, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.Size = new System.Drawing.Size(76, 12);
             this.label1.TabIndex = 9;
             this.label1.Text = "Class Name";
             // 
@@ -485,7 +486,7 @@ namespace RibbonDemo
             // 
             this.btGenerateThemeClass.Location = new System.Drawing.Point(3, 3);
             this.btGenerateThemeClass.Name = "btGenerateThemeClass";
-            this.btGenerateThemeClass.Size = new System.Drawing.Size(166, 23);
+            this.btGenerateThemeClass.Size = new System.Drawing.Size(194, 21);
             this.btGenerateThemeClass.TabIndex = 8;
             this.btGenerateThemeClass.Text = "Generate ColorTable Class";
             this.btGenerateThemeClass.UseVisualStyleBackColor = true;
@@ -494,7 +495,7 @@ namespace RibbonDemo
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 138);
+            this.splitContainer1.Location = new System.Drawing.Point(0, 127);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -506,8 +507,9 @@ namespace RibbonDemo
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel2);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.splitContainer1.Size = new System.Drawing.Size(897, 483);
-            this.splitContainer1.SplitterDistance = 229;
+            this.splitContainer1.Size = new System.Drawing.Size(1082, 446);
+            this.splitContainer1.SplitterDistance = 275;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 4;
             // 
             // naviMain1
@@ -515,7 +517,7 @@ namespace RibbonDemo
             this.naviMain1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.naviMain1.Location = new System.Drawing.Point(0, 0);
             this.naviMain1.Name = "naviMain1";
-            this.naviMain1.Size = new System.Drawing.Size(229, 483);
+            this.naviMain1.Size = new System.Drawing.Size(275, 446);
             this.naviMain1.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -530,7 +532,7 @@ namespace RibbonDemo
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(664, 483);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(802, 446);
             this.tableLayoutPanel2.TabIndex = 13;
             // 
             // ribbon1
@@ -562,14 +564,13 @@ namespace RibbonDemo
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonSeparator2);
             this.ribbon1.QuickAccessToolbar.Items.Add(this.ribbonButton2);
             this.ribbon1.RibbonTabFont = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ribbon1.Size = new System.Drawing.Size(897, 138);
+            this.ribbon1.Size = new System.Drawing.Size(1082, 127);
             this.ribbon1.TabIndex = 0;
             this.ribbon1.Tabs.Add(this.ribbonTab1);
             this.ribbon1.Tabs.Add(this.ribbonTab2);
             this.ribbon1.Tabs.Add(this.ribbonTab5);
             this.ribbon1.Tabs.Add(this.ribbonTab3);
             this.ribbon1.Tabs.Add(this.ribbonTab6);
-            this.ribbon1.TabsMargin = new System.Windows.Forms.Padding(6, 26, 20, 0);
             this.ribbon1.TabSpacing = 3;
             this.ribbon1.ThemeColor = System.Windows.Forms.RibbonTheme.Blue_2010;
             this.ribbon1.UseAlwaysStandardTheme = true;
@@ -797,6 +798,7 @@ namespace RibbonDemo
             this.ribbonComboBox2.DropDownItems.Add(this.ribbonButton22);
             this.ribbonComboBox2.DropDownItems.Add(this.ribbonButton23);
             this.ribbonComboBox2.Name = "ribbonComboBox2";
+            this.ribbonComboBox2.SelectedIndex = 2;
             this.ribbonComboBox2.Text = "";
             this.ribbonComboBox2.TextBoxText = "Calibri";
             this.ribbonComboBox2.TextBoxWidth = 120;
@@ -846,6 +848,7 @@ namespace RibbonDemo
             this.ribbonComboBox3.DropDownItems.Add(this.ribbonButton29);
             this.ribbonComboBox3.DropDownItems.Add(this.ribbonButton30);
             this.ribbonComboBox3.Name = "ribbonComboBox3";
+            this.ribbonComboBox3.SelectedIndex = -1;
             this.ribbonComboBox3.Text = "";
             this.ribbonComboBox3.TextBoxText = "11";
             this.ribbonComboBox3.TextBoxWidth = 40;
@@ -1053,6 +1056,8 @@ namespace RibbonDemo
             // ribbonButtonList1
             // 
             this.ribbonButtonList1.Buttons.Add(this.ribbonButton4);
+            this.ribbonButtonList1.Buttons.Add(this.ribbonButton38);
+            this.ribbonButtonList1.Buttons.Add(this.ribbonButton39);
             this.ribbonButtonList1.ButtonsSizeMode = System.Windows.Forms.RibbonElementSizeMode.Large;
             this.ribbonButtonList1.FlowToBottom = false;
             this.ribbonButtonList1.ItemsSizeInDropwDownMode = new System.Drawing.Size(7, 5);
@@ -1066,6 +1071,22 @@ namespace RibbonDemo
             this.ribbonButton4.Name = "ribbonButton4";
             this.ribbonButton4.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton4.SmallImage")));
             this.ribbonButton4.Text = "ribbonButton4";
+            // 
+            // ribbonButton38
+            // 
+            this.ribbonButton38.Checked = true;
+            this.ribbonButton38.Image = global::RibbonDemo.Properties.Resources.word2003doc32;
+            this.ribbonButton38.LargeImage = global::RibbonDemo.Properties.Resources.word2003doc32;
+            this.ribbonButton38.Name = "ribbonButton38";
+            this.ribbonButton38.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton38.SmallImage")));
+            this.ribbonButton38.Text = "ribbonButton38";
+            // 
+            // ribbonButton39
+            // 
+            this.ribbonButton39.Image = ((System.Drawing.Image)(resources.GetObject("ribbonButton39.Image")));
+            this.ribbonButton39.LargeImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton39.LargeImage")));
+            this.ribbonButton39.Name = "ribbonButton39";
+            this.ribbonButton39.SmallImage = ((System.Drawing.Image)(resources.GetObject("ribbonButton39.SmallImage")));
             // 
             // ribbonPanel3
             // 
@@ -1239,9 +1260,9 @@ namespace RibbonDemo
             // 
             // ThemeBuilderForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(897, 621);
+            this.ClientSize = new System.Drawing.Size(1082, 573);
             this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.ribbon1);
             this.KeyPreview = true;
@@ -1258,7 +1279,6 @@ namespace RibbonDemo
             this.groupBox1.PerformLayout();
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
-//            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();         // 17/08/19: tajbender: Comment out cause this will crash
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -1381,5 +1401,7 @@ namespace RibbonDemo
         private RibbonButton ribbonButton37;
         private RibbonContext ribbonContext1;
         private RibbonButton FontEnableDisableHomeButton;
+        private RibbonButton ribbonButton38;
+        private RibbonButton ribbonButton39;
     }
 }

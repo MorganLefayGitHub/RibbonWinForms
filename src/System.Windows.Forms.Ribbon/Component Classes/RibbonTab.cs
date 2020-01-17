@@ -943,7 +943,7 @@ namespace System.Windows.Forms
                     }
                 }
 
-                if (!Owner.IsDesignMode())
+                if (!Owner.IsDesignMode() && (Owner.TopLevelControl as Form)?.WindowState != FormWindowState.Minimized)
                 {
                     //check if there are visible panels
                     if (panelsVisibles > 0)
